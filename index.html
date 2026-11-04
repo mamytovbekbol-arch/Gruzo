@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Грузоперевозки в Бишкеке: перевозка мебели, переезд квартир, доставка стройматериалов, вывоз строительного, бытового и швейного мусора. Тел. +996 702 850 485">
+<meta name="description" content="Грузоперевозки в Бишкеке: перевозка мебели, переезд квартир, доставка стройматериалов, вывоз мусора. Тел. +996 702 850 485">
 <title>Грузоперевозки Бишкек</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,9 +57,12 @@ p { margin: 0; }
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: 800; border-radius: 6px; padding: 14px 22px; min-height: 52px; border: 2px solid transparent; cursor: pointer; font-family: var(--body); font-size: 16px; }
 .btn-call { background: var(--yellow); color: var(--yellow-ink); }
 .btn-call:hover { background: #ffe44d; }
+.btn-wa { background: #25d366; color: #0b2a14; }
+.btn-wa:hover { background: #4be083; }
 .btn-ghost { border-color: var(--line); color: var(--snow); background: transparent; }
 .btn-ghost:hover { border-color: var(--yellow); color: var(--yellow); }
 .btn svg { width: 20px; height: 20px; flex: none; }
+.top .actions { display: flex; gap: 8px; }
 .top .btn { min-height: 42px; padding: 8px 16px; font-size: 15px; }
 
 /* hero */
@@ -157,8 +160,10 @@ footer { border-top: 1px solid var(--line); padding-block: 20px; color: var(--mu
   .hero { padding-block: 28px 40px; gap: 28px; }
   .top .btn span { display: none; }
   .cta .btn { width: 100%; }
-  .bar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--asphalt); border-top: 1px solid var(--line); padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
-  .bar .btn { width: 100%; font-size: 18px; }
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: var(--asphalt); border-top: 1px solid var(--line); padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+  .bar { display: flex; gap: 10px; }
+  .bar .btn { flex: 1; font-size: 16px; padding-inline: 10px; }
+  .top .btn-wa { padding: 8px 12px; }
   body { padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px)); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -168,6 +173,7 @@ footer { border-top: 1px solid var(--line); padding-block: 20px; color: var(--mu
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.200l-.3-.2-3 .8.8-2.9-.2-.3A8.200 8.200 0 1 1 12 20.200zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100-1.400-.7-2.300-1.200-3.200-2.700-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.100-.7.300-.7.700-1 1.500-1 2.300.1 1 .5 1.900 1.100 2.700 1.200 1.700 2.700 3 4.500 3.700 1.600.6 2.200.6 3 .5.600-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.2-.3-.3-.5-.4z"/></symbol>
   <symbol id="i-sofa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 11V8a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v4H3zM6 17v2M18 17v2"/></symbol>
   <symbol id="i-home" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7M5 10v10h14V10M10 20v-6h4v6"/></symbol>
   <symbol id="i-brick" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 6h18v12H3zM3 12h18M9 6v6M15 12v6"/></symbol>
@@ -185,7 +191,10 @@ footer { border-top: 1px solid var(--line); padding-block: 20px; color: var(--mu
       <a href="#podbor">Подбор</a>
       <a href="#partners">Сотрудничество</a>
     </nav>
-    <a class="btn btn-call" href="tel:+996702850485" aria-label="Позвонить +996 702 850 485"><svg><use href="#i-phone"/></svg><span>Позвонить</span></a>
+    <div class="actions">
+      <a class="btn btn-wa" href="https://wa.me/996999775070" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+      <a class="btn btn-call" href="tel:+996702850485" aria-label="Позвонить +996 702 850 485"><svg><use href="#i-phone"/></svg><span>Позвонить</span></a>
+    </div>
   </div>
 </header>
 
@@ -197,6 +206,7 @@ footer { border-top: 1px solid var(--line); padding-block: 20px; color: var(--mu
       <p class="lead">Перевозим мебель, переезжаем с квартир, доставляем стройматериалы и вывозим строительный, бытовой и швейный мусор. Вежливый водитель, ответственные грузчики, быстрая подача машины на любое время.</p>
       <div class="cta">
         <a class="btn btn-call" href="tel:+996702850485"><svg><use href="#i-phone"/></svg>Позвонить</a>
+        <a class="btn btn-wa" href="https://wa.me/996999775070" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Написать в WhatsApp</a>
         <a class="btn btn-ghost" href="#podbor">Подобрать машину</a>
       </div>
       <div class="numline">Телефон: <b id="num">+996 702 850 485</b> <button class="copy" id="copy" type="button">Скопировать</button></div>
@@ -270,7 +280,7 @@ footer { border-top: 1px solid var(--line); padding-block: 20px; color: var(--mu
       <div class="answer" aria-live="polite">
         <h3 id="ans-h"></h3>
         <p id="ans-p"></p>
-        <div class="cta" style="margin-top:8px"><a class="btn btn-call" href="tel:+996702850485"><svg><use href="#i-phone"/></svg>Позвонить</a></div>
+        <div class="cta" style="margin-top:8px"><a class="btn btn-call" href="tel:+996702850485"><svg><use href="#i-phone"/></svg>Позвонить</a><a class="btn btn-wa" href="https://wa.me/996999775070" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a></div>
       </div>
     </div>
   </section>
@@ -303,13 +313,14 @@ footer { border-top: 1px solid var(--line); padding-block: 20px; color: var(--mu
     <h2>Нужна машина?</h2>
     <a class="phone" href="tel:+996702850485">+996 702 850 485</a>
     <p>Звоните в любое время. Скажем стоимость и подадим машину.</p>
-    <a class="btn btn-call" href="tel:+996702850485" style="font-size:20px;padding:16px 30px;min-height:60px"><svg><use href="#i-phone"/></svg>Позвонить</a>
+    <div class="cta" style="justify-content:center"><a class="btn btn-call" href="tel:+996702850485" style="font-size:20px;padding:16px 30px;min-height:60px"><svg><use href="#i-phone"/></svg>Позвонить</a><a class="btn btn-wa" href="https://wa.me/996999775070" target="_blank" rel="noopener" style="font-size:20px;padding:16px 30px;min-height:60px"><svg><use href="#i-wa"/></svg>Написать в WhatsApp</a></div>
+    <p>WhatsApp: <b style="color:var(--snow)">0999 775 070</b></p>
   </section>
 
   <footer><span>Грузоперевозки, Бишкек</span><span>Мебель, переезды, стройматериалы, вывоз мусора</span></footer>
 </main>
 
-<div class="bar"><a class="btn btn-call" href="tel:+996702850485"><svg><use href="#i-phone"/></svg>Позвонить +996 702 850 485</a></div>
+<div class="bar"><a class="btn btn-call" href="tel:+996702850485"><svg><use href="#i-phone"/></svg>Позвонить</a><a class="btn btn-wa" href="https://wa.me/996999775070" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a></div>
 
 <script>
 (function () {
